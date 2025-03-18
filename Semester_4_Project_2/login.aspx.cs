@@ -13,5 +13,9 @@ namespace Semester_4_Project_2
         {
 
         }
+        public void btnLogIn(object sender, EventArgs e)
+        {
+
+        }
     }
 }

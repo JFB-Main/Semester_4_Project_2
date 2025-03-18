@@ -22,17 +22,31 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="home_supplier.aspx">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="home_product.aspx">
-                                    Products
-                                </a>
-                            </li>
+                        <ul class="navbar-nav ml-auto navbar-edit"
+                            <div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home_supplier.aspx">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home_product.aspx">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="supplierControl.aspx">
+                                        Admin
+                                    </a>
+                                </li>
+                            </div>
+                            <div>
+                                <li class="nav-item" style="display: flex; justify-content: center; align-items:center;">
+                                    <a class="nav-link" style="color: white;" href="login.aspx">
+                                        Login
+                                    </a>
+                                </li>
+                            </div>
         <%--                            <li class="nav-item">
                                 <a class="nav-link" href="service.aspx">
                                     Services
@@ -48,10 +62,43 @@
                 </div>
             </nav>
             <div class="sidebar">
-              <a class="active" href="#home">Home</a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
+                <div>
+                    <div>
+                        <p class="sidebar-label-design">
+                            Supplier Management :
+                        </p>
+                    </div>
+                    <div>
+                      <a class="" href="supplierControl.aspx">Supplier Control</a>
+                      <a href="supplierHistory.aspx">Supplier History</a>
+                    </div>
+                </div>
+                <hr style="color: #fbfd00; width: 90%; margin-left:auto; margin-right:auto;"/>
+                <div>
+                    <div>
+                        <p class="sidebar-label-design">
+                            Stocks Management :
+                        </p>
+                    </div>
+                    <div>
+                        <a href="stocksControl.aspx">Stocks Control</a>
+<%--                        <a href="stocksUpdate.aspx">Stocks Update</a>--%>
+                        <a href="stocksHistory.aspx">Stocks History</a>
+                    </div>
+                </div>
+                    <hr style="color: #fbfd00; width: 90%; margin-left:auto; margin-right:auto;"/>
+                <div>
+                    <div>
+                        <p class="sidebar-label-design">
+                            Admin Management :
+                        </p>
+                    </div>
+                    <div>
+                        <a href="addAdmin.aspx">Add Admin</a>
+                        <a href="loginHistory.aspx">Login History</a>
+                        <a href="userMail.aspx">User Mail</a>
+                    </div>
+                </div>
             </div>
             <div class="placeholder-style">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

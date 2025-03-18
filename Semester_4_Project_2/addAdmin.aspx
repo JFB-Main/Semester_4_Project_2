@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="supplierHistory.aspx.cs" Inherits="Semester_4_Project_2.supplierHistory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="addAdmin.aspx.cs" Inherits="Semester_4_Project_2.addAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="App_Themes\Project_Theme\styles\supplierHistory.css" rel="stylesheet" />
 </asp:Content>
-
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="sup-content">
@@ -10,31 +9,29 @@
             <div class="">
                 <div>
                     <h2>
-                        SUPPLIER HISTORY
+                        ADD ADMINISTRATOR
                     </h2>
                 </div>
                 <div>
                     <div class="mb-3">
-                        <label for="productNameForm" class="form-label">Product Name</label>
-                        <asp:TextBox ID="productNameForm" class="form-control" placeholder="Enter the product name"  runat="server"></asp:TextBox>
+                        <label for="adminUsernameForm" class="form-label">Admin Username</label>
+                        <asp:TextBox ID="adminUsernameForm" class="form-control" placeholder="Enter the name" runat="server"></asp:TextBox>
                     </div>
                     <div class="mb-3">
-                        <label for="supplierForm" class="form-label">Supplier Name</label>
-                        <asp:TextBox ID="supplierForm" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
-                    </div>
-                    <div class="category">
-                        <label for="DropDownCategory" class="form-label">Category</label>
-                        <asp:DropDownList ID="ddlCat" runat="server"  placeholder="Choose the category">
-                        </asp:DropDownList>
+                        <label for="adminPasswordForm" class="form-label">Admin Password</label>
+                        <asp:TextBox ID="adminPasswordForm" class="form-control" placeholder="Enter the name" runat="server" TextMode="Password"></asp:TextBox>
                     </div>
                 </div>
             </div>
             <div class="">
-                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch" class="btn btn-primary button-yellow-design button-layout"/>
+                <asp:Button ID="ButtonAdd" runat="server" Text="Add" OnClick="btnAdd" class="btn btn-primary button-yellow-design button-layout mb-3"/>
+                <asp:Button ID="ButtonUpdate" runat="server" Text="Update" OnClick="btnUpdate" class="btn btn-primary button-yellow-design button-layout"/>
+                <hr />
+                <asp:Button ID="ButtonDelete" runat="server" Text="Delete" OnClick="btnDelete" class="btn btn-primary button-black-design button-layout"/>
             </div>
         </div>
         <div class="sup-content-table">
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;>
+                <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
                 <th>Product Name</th>
                 <th>Description</th>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Semester_4_Project_2
 {
-    public partial class supplierHistory : System.Web.UI.Page
+    public partial class stocksControl : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,5 +28,6 @@ namespace Semester_4_Project_2
             ddlCat.Items.Add("adwfeafeaef");
             ddlCat.Items.Add("test");
         }
+
     }
 }

@@ -11,35 +11,26 @@ namespace Semester_4_Project_2
 {
 
 
-    public partial class supplierHistory
+    public partial class userMail
     {
 
         /// <summary>
-        /// productNameForm control.
+        /// userEmailForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox productNameForm;
+        protected global::System.Web.UI.WebControls.TextBox userEmailForm;
 
         /// <summary>
-        /// supplierForm control.
+        /// ddlStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox supplierForm;
-
-        /// <summary>
-        /// ddlCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCat;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
 
         /// <summary>
         /// ButtonSearch control.
@@ -49,6 +40,15 @@ namespace Semester_4_Project_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonSearch;
+
+        /// <summary>
+        /// ButtonUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonUpdate;
 
         /// <summary>
         /// Repeater1 control.

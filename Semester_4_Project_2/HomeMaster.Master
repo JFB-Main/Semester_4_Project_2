@@ -22,17 +22,31 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="home_supplier.aspx">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="home_product.aspx">
-                                    Products
-                                </a>
-                            </li>
+                        <ul class="navbar-nav ml-auto navbar-edit">
+                            <div style="display: flex; flex-direction: row;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home_supplier.aspx">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home_product.aspx">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="supplierControl.aspx">
+                                        Admin
+                                    </a>
+                                </li>
+                            </div>
+                            <div>
+                                <li class="nav-item" style="display: flex; justify-content: center; align-items:center;">
+                                    <a class="nav-link" style="color: white;" href="login.aspx">
+                                        Login
+                                    </a>
+                                </li>
+                            </div>
 <%--                            <li class="nav-item">
                                 <a class="nav-link" href="service.aspx">
                                     Services
@@ -77,12 +91,12 @@
                     </div>
                     <div class="footer-form">
                         <div class="mb-3">
-                            <label for="emailForm" class="form-label">Email Address</label>
-                            <input type="text" class="form-control" id="nameForm" placeholder="Enter your email address">
+                            <label for="emailForm" class="form-label">Name</label>
+                            <asp:TextBox ID="nameForm" class="form-control" placeholder="Enter your name" runat="server"></asp:TextBox>
                         </div>
                         <div class="mb-3">
                             <label for="emailForm" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="emailForm" placeholder="Enter your email address">
+                            <asp:TextBox ID="emailForm" class="form-control" placeholder="Enter your email address" runat="server" TextMode="Email"></asp:TextBox>
                         </div>
                         <div class="mb-3">
                               <label for="messageForm" class="form-label">Your Message</label>

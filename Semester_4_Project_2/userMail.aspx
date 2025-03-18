@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="supplierHistory.aspx.cs" Inherits="Semester_4_Project_2.supplierHistory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="userMail.aspx.cs" Inherits="Semester_4_Project_2.userMail" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="App_Themes\Project_Theme\styles\supplierHistory.css" rel="stylesheet" />
+        <link href="App_Themes\Project_Theme\styles\supplierHistory.css" rel="stylesheet" />
 </asp:Content>
-
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="sup-content">
@@ -10,31 +9,28 @@
             <div class="">
                 <div>
                     <h2>
-                        SUPPLIER HISTORY
+                        USER MAIL & COMPLAINT
                     </h2>
                 </div>
                 <div>
                     <div class="mb-3">
-                        <label for="productNameForm" class="form-label">Product Name</label>
-                        <asp:TextBox ID="productNameForm" class="form-control" placeholder="Enter the product name"  runat="server"></asp:TextBox>
-                    </div>
-                    <div class="mb-3">
-                        <label for="supplierForm" class="form-label">Supplier Name</label>
-                        <asp:TextBox ID="supplierForm" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
+                        <label for="userEmailForm" class="form-label">User Email</label>
+                        <asp:TextBox ID="userEmailForm" class="form-control" placeholder="Enter the Email"  runat="server"></asp:TextBox>
                     </div>
                     <div class="category">
-                        <label for="DropDownCategory" class="form-label">Category</label>
-                        <asp:DropDownList ID="ddlCat" runat="server"  placeholder="Choose the category">
+                        <label for="ddlStatus" class="form-label">Mail Status</label>
+                        <asp:DropDownList ID="ddlStatus" runat="server"  placeholder="Choose the status">
                         </asp:DropDownList>
                     </div>
                 </div>
             </div>
             <div class="">
-                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch" class="btn btn-primary button-yellow-design button-layout"/>
+                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch" class="btn btn-primary button-yellow-design button-layout mb-3"/>
+                <asp:Button ID="ButtonUpdate" runat="server" Text="Update" OnClick="btnUpdate" class="btn btn-primary button-yellow-design button-layout"/>
             </div>
         </div>
         <div class="sup-content-table">
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;>
+                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
                 <th>Product Name</th>
                 <th>Description</th>

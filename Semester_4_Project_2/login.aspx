@@ -18,25 +18,25 @@
         <form id="loginForm" runat="server">
             <h1>Log In</h1>
             <div class="input-box">
-                <input type="text" id="username" placeholder="Username/Email" required>
+                <asp:TextBox ID="username" class="form-control" placeholder="Username"  runat="server"></asp:TextBox>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" id="password" placeholder="Password" required>
+                <asp:TextBox ID="password" class="form-control" placeholder="Password"  runat="server" TextMode="Password"></asp:TextBox>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
-            <div class="remember-forgot">
+<%--            <div class="remember-forgot">
                 <label><input type="checkbox"> Remember Me!</label>
                 <a href="#"> Forgot Password? </a>
-            </div>
+            </div>--%>
 
-            <button type="submit" class="btn"> Log In </button>
+            <asp:Button ID="ButtonLogIn" runat="server" Text="Log In" OnClick="btnLogIn" class="btn button-yellow-design button-layout mb-3"/>
 
-            <div class="register-link">
+<%--            <div class="register-link">
                 <p> Don't Sign Up Yet? <a href="signup.html">Sign Up!</a> </p>
                 <p> Change Password? <a href="changePassword.html">Click Here!</a> </p>
-            </div>
+            </div>--%>
         </form>
     </div>
 

@@ -118,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addAdmin.aspx" />
     <Content Include="App_Themes\Project_Theme\assets\favicon.ico" />
     <Content Include="App_Themes\Project_Theme\Image\aaea.png" />
     <Content Include="App_Themes\Project_Theme\Image\bg-hero.png" />
@@ -127,16 +128,30 @@
     <Content Include="App_Themes\Project_Theme\styles\homepage-product.css" />
     <Content Include="App_Themes\Project_Theme\styles\homepage.css" />
     <Content Include="App_Themes\Project_Theme\styles\styles.css" />
+    <Content Include="App_Themes\Project_Theme\styles\supplierHistory.css" />
     <Content Include="Global.asax" />
     <Content Include="home_product.aspx" />
     <Content Include="home_supplier.aspx" />
     <Content Include="App_Themes\Project_Theme\Image\background-login-signup.png" />
     <Content Include="login.aspx" />
     <Content Include="App_Themes\Project_Theme\styles\login.css" />
+    <Content Include="loginHistory.aspx" />
+    <Content Include="stocksControl.aspx" />
+    <Content Include="stocksHistory.aspx" />
+    <Content Include="stocksUpdate.aspx" />
+    <Content Include="supplierControl.aspx" />
     <Content Include="supplierHistory.aspx" />
+    <Content Include="userMail.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addAdmin.aspx.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addAdmin.aspx.designer.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,13 +190,55 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginHistory.aspx.cs">
+      <DependentUpon>loginHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginHistory.aspx.designer.cs">
+      <DependentUpon>loginHistory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stocksControl.aspx.cs">
+      <DependentUpon>stocksControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stocksControl.aspx.designer.cs">
+      <DependentUpon>stocksControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stocksHistory.aspx.cs">
+      <DependentUpon>stocksHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stocksHistory.aspx.designer.cs">
+      <DependentUpon>stocksHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stocksUpdate.aspx.cs">
+      <DependentUpon>stocksUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stocksUpdate.aspx.designer.cs">
+      <DependentUpon>stocksUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="supplierControl.aspx.cs">
+      <DependentUpon>supplierControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="supplierControl.aspx.designer.cs">
+      <DependentUpon>supplierControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="supplierHistory.aspx.cs">
       <DependentUpon>supplierHistory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="supplierHistory.aspx.designer.cs">
       <DependentUpon>supplierHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userMail.aspx.cs">
+      <DependentUpon>userMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userMail.aspx.designer.cs">
+      <DependentUpon>userMail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

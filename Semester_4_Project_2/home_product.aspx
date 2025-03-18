@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeMaster.Master" AutoEventWireup="true" CodeBehind="home_product.aspx.cs" Inherits="Semester_4_Project_2.home_product" %>
 
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="App_Themes\Project_Theme\styles\homepage-product.css" rel="stylesheet" />
 </asp:Content>
@@ -117,14 +119,14 @@
                         <th>Product Name</th>
                         <th>Description</th>
                       </tr>
-                      <tr>
-                        <td>Emil</td>
-                        <td>Tobias</td>
-                      </tr>
-                      <tr>
-                        <td>16</td>
-                        <td>10</td>
-                      </tr>
+                        <asp:Repeater ID="Repeater1" runat="server">
+                            <ItemTemplate>
+                                <tr>
+                                    <td><%# Eval("stock_name") %></td>
+                                    <td><%# Eval("description") %></td>
+                                </tr>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </table>
                 </div>
             </div>

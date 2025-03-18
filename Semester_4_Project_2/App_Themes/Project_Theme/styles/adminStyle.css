@@ -12404,6 +12404,17 @@ textarea.form-control-lg {
     }
 }
 
+body {
+    background-image: url(https://web-static.hg-cdn.com/endfield/official-v3/oversea/assets/img/common_bg.d874e4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar-edit{
+    justify-content: space-between;
+}
+
 .footer-ground {
     background-color: #242424;
     height: auto;
@@ -12443,11 +12454,17 @@ textarea.form-control-lg {
   overflow: auto;
 }
 
+.sidebar-label-design {
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 16px;
+}
+
 .sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
 }
  
 .sidebar a.active {
@@ -12489,8 +12506,7 @@ div.content {
 }
 
 .placeholder-style {
-    margin-left: 200px;
-    padding-top: 527px;
+    margin-left: 100px;
     padding: 1px 16px;
-    padding-top: 57px;
+    padding-top: 121px;
 }

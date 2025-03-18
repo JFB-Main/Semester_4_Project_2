@@ -1,0 +1,71 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="supplierControl.aspx.cs" Inherits="Semester_4_Project_2.supplierControl" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="App_Themes\Project_Theme\styles\supplierHistory.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="sup-content">
+        <div class="sup-content-search">
+            <div class="">
+                <div>
+                    <h2>
+                        SUPPLIER CONTROl
+                    </h2>
+                </div>
+                <div>
+                    <div class="mb-3">
+                        <label for="supplierForm" class="form-label">Supplier Name</label>
+                        <asp:TextBox ID="supplierNameForm" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="productNameForm" class="form-label">Supplier Description</label>
+                        <asp:TextBox ID="supplierDescForm" class="form-control" placeholder="Enter the description"  runat="server"></asp:TextBox>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productNameForm" class="form-label">Supplier Address</label>
+                        <asp:TextBox ID="supplierAddressForm" class="form-control" placeholder="Enter the address"  runat="server"></asp:TextBox>
+                    </div>
+                    <div class="file-insert">
+                        <label class="form-label" for="uploadFile">Upload Photo</label>
+                        <input type="file" class="form-control" id="uploadFile" />
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <asp:Button ID="ButtonAdd" runat="server" Text="Add" OnClick="btnAdd" class="btn btn-primary button-yellow-design button-layout mb-3"/>
+                <asp:Button ID="ButtonUpdate" runat="server" Text="Update" OnClick="btnUpdate" class="btn btn-primary button-yellow-design button-layout"/>
+                <hr />
+                <asp:Button ID="ButtonDelete" runat="server" Text="Delete" OnClick="btnDelete" class="btn btn-primary button-black-design button-layout"/>
+            </div>
+        </div>
+        <div class="sup-content-table">
+                <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+                <tr style="border-bottom:1px solid black;">
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Product Name</th>
+    
+                <th>Product Name</th>
+    
+                <th>Product Name</th>
+    
+                <th>Product Name</th>
+
+                <th>Product Name</th>
+    
+                
+                </tr>
+                    <td>Contoh1</td>
+                    <td>Contoh2</td>
+                <asp:Repeater ID="Repeater1" runat="server">
+                    <ItemTemplate>
+                        <tr>
+                            <td>Contoh1</td>
+                            <td>Contoh2</td>
+                        </tr>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </table>
+        </div>
+    </div>
+</asp:Content>

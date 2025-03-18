@@ -11,26 +11,26 @@ namespace Semester_4_Project_2
 {
 
 
-    public partial class supplierHistory
+    public partial class stocksHistory
     {
 
         /// <summary>
-        /// productNameForm control.
+        /// AdminUsernameForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox productNameForm;
+        protected global::System.Web.UI.WebControls.TextBox AdminUsernameForm;
 
         /// <summary>
-        /// supplierForm control.
+        /// stockForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox supplierForm;
+        protected global::System.Web.UI.WebControls.TextBox stockForm;
 
         /// <summary>
         /// ddlCat control.

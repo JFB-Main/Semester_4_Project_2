@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Semester_4_Project_2
 {
-    public partial class supplierHistory : System.Web.UI.Page
+    public partial class stocksHistory : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,7 +21,7 @@ namespace Semester_4_Project_2
             ddlCat.Items.Add("test");
         }
 
-        public void btnSearch(object sender, EventArgs e)
+        public void btnSubmit(object sender, EventArgs e)
         {
             ddlCat.Items.Clear();
             ddlCat.Items.Add("I am a value and a text");

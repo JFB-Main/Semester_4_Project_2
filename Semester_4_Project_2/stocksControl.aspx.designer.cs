@@ -11,26 +11,35 @@ namespace Semester_4_Project_2
 {
 
 
-    public partial class supplierHistory
+    public partial class stocksControl
     {
 
         /// <summary>
-        /// productNameForm control.
+        /// supplierIDForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox productNameForm;
+        protected global::System.Web.UI.WebControls.TextBox supplierIDForm;
 
         /// <summary>
-        /// supplierForm control.
+        /// stockNameForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox supplierForm;
+        protected global::System.Web.UI.WebControls.TextBox stockNameForm;
+
+        /// <summary>
+        /// stockPriceForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox stockPriceForm;
 
         /// <summary>
         /// ddlCat control.
@@ -40,6 +49,15 @@ namespace Semester_4_Project_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlCat;
+
+        /// <summary>
+        /// stockDescForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox stockDescForm;
 
         /// <summary>
         /// ButtonSearch control.

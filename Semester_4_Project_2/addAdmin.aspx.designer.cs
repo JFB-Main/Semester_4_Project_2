@@ -11,44 +11,53 @@ namespace Semester_4_Project_2
 {
 
 
-    public partial class supplierHistory
+    public partial class addAdmin
     {
 
         /// <summary>
-        /// productNameForm control.
+        /// adminUsernameForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox productNameForm;
+        protected global::System.Web.UI.WebControls.TextBox adminUsernameForm;
 
         /// <summary>
-        /// supplierForm control.
+        /// adminPasswordForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox supplierForm;
+        protected global::System.Web.UI.WebControls.TextBox adminPasswordForm;
 
         /// <summary>
-        /// ddlCat control.
+        /// ButtonAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCat;
+        protected global::System.Web.UI.WebControls.Button ButtonAdd;
 
         /// <summary>
-        /// ButtonSearch control.
+        /// ButtonUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonSearch;
+        protected global::System.Web.UI.WebControls.Button ButtonUpdate;
+
+        /// <summary>
+        /// ButtonDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonDelete;
 
         /// <summary>
         /// Repeater1 control.

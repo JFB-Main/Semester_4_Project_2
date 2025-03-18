@@ -10825,6 +10825,10 @@ textarea.form-control-lg {
   }
 }
 
+.navbar-edit {
+    justify-content: space-between;
+}
+
 .footer-ground{
     background-color: #242424;
     height: auto;
