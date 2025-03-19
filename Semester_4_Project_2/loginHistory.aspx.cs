@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Semester_4_Project_2.Class;
 
 namespace Semester_4_Project_2
 {
@@ -12,7 +13,10 @@ namespace Semester_4_Project_2
         protected void Page_Load(object sender, EventArgs e)
         {
             dropdownList();
-            
+            if (!ClassSession.IsLoggedIn())
+            {
+                Response.Redirect("home_supplier.aspx"); // Redirect jika belum login
+            }
         }
 
 

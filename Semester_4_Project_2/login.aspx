@@ -25,18 +25,9 @@
                 <asp:TextBox ID="password" class="form-control" placeholder="Password"  runat="server" TextMode="Password"></asp:TextBox>
                 <i class='bx bxs-lock-alt'></i>
             </div>
-
-<%--            <div class="remember-forgot">
-                <label><input type="checkbox"> Remember Me!</label>
-                <a href="#"> Forgot Password? </a>
-            </div>--%>
-
             <asp:Button ID="ButtonLogIn" runat="server" Text="Log In" OnClick="btnLogIn" class="btn button-yellow-design button-layout mb-3"/>
+            <asp:Label ID="lblError" runat="server" ForeColor="Red" Visible="false"></asp:Label>
 
-<%--            <div class="register-link">
-                <p> Don't Sign Up Yet? <a href="signup.html">Sign Up!</a> </p>
-                <p> Change Password? <a href="changePassword.html">Click Here!</a> </p>
-            </div>--%>
         </form>
     </div>
 

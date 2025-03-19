@@ -22,41 +22,26 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto navbar-edit"
-                            <div>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="home_supplier.aspx">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="home_product.aspx">
-                                        Products
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="supplierControl.aspx">
-                                        Admin
-                                    </a>
-                                </li>
-                            </div>
-                            <div>
-                                <li class="nav-item" style="display: flex; justify-content: center; align-items:center;">
-                                    <a class="nav-link" style="color: white;" href="login.aspx">
-                                        Login
-                                    </a>
-                                </li>
-                            </div>
-        <%--                            <li class="nav-item">
-                                <a class="nav-link" href="service.aspx">
-                                    Services
-                                </a>
-                            </li>--%>
-        <%--                            <li class="nav-item">
-                                <a class="nav-link" href="contact.aspx">
-                                    Contact
-                                </a>
-                            </li>--%>
+                        <ul class="navbar-nav ml-auto navbar-edit">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home_supplier.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="home_product.aspx">Products</a>
+                            </li>
+                            <li class="nav-item" id="supplierControlNav" runat="server">
+                                <a class="nav-link" href="supplierControl.aspx">Admin</a>
+                            </li>
+                            <li class="nav-item" id="loginNav" runat="server">
+                                <a class="nav-link" href="login.aspx">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-white" id="usernameNav" runat="server"></span>
+                            </li>
+                            <li class="nav-item" id="logoutNav" runat="server">
+                                <asp:LinkButton ID="btnLogout" runat="server" CssClass="nav-link" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -81,8 +66,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="stocksControl.aspx">Stocks Control</a>
-<%--                        <a href="stocksUpdate.aspx">Stocks Update</a>--%>
+                        <a href="stocksControl.aspx">Stocks Control</a
                         <a href="stocksHistory.aspx">Stocks History</a>
                     </div>
                 </div>

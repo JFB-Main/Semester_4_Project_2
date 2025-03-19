@@ -11,6 +11,8 @@
                         SUPPLIER CONTROl
                     </h2>
                 </div>
+                <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+
                 <div>
                     <div class="mb-3">
                         <label for="supplierForm" class="form-label">Supplier Name</label>
@@ -25,10 +27,17 @@
                         <label for="productNameForm" class="form-label">Supplier Address</label>
                         <asp:TextBox ID="supplierAddressForm" class="form-control" placeholder="Enter the address"  runat="server"></asp:TextBox>
                     </div>
-                    <div class="file-insert">
+                    <div class="file-insert mb-3">
                         <label class="form-label" for="uploadFile">Upload Photo</label>
-                        <input type="file" class="form-control" id="uploadFile" />
+                        <asp:FileUpload ID="uploadFile" runat="server" CssClass="form-control" />
                     </div>
+                   <div class="category">
+                        <label for="DropDownSupplier" class="form-label">Select Supplier</label>
+                        <asp:DropDownList ID="ddlSupplier" runat="server" CssClass="form-control" >
+                        </asp:DropDownList>
+                   </div>
+                    <asp:HiddenField ID="HiddenFieldImagePath" runat="server" />
+
                 </div>
             </div>
             <div class="">
@@ -39,29 +48,20 @@
             </div>
         </div>
         <div class="sup-content-table">
-                <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+            <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
+                    <th>Supplier Name</th>
+                    <th>Description</th>
+                    <th>Address</th>
+                    <th>Photo</th>
                 </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
+                            <td><%# Eval("SupplierName") %></td>
+                            <td><%# Eval("Description") %></td>
+                            <td><%# Eval("Address") %></td>
+                            <td><img src='<%# Eval("image_path") %>' width="120"/></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
