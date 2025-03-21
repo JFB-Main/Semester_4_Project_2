@@ -95,52 +95,25 @@
             </p>
             <div class="container-fluid supplier-container">
                 <div class="supplier-row">
-                    <div class="row-content">
-                        <img class="card-img" src="App_Themes\Project_Theme\Image\aaea.png"/>
-                        <div class="card-name-line-group">
-                            <div class="card-line">
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                            <div class="row-content">
+                                <img class="card-img" src='<%# Eval("image_path") %>' alt="Company Image"/>
+                                <div class="card-name-line-group">
+                                    <div class="card-line"></div>
+                                    <p class="lead card-name">
+                                        Name: <%# Eval("name") %>
+                                    </p>
+                                    <p class="card-desc">
+                                        <%# Eval("description") %>
+                                    </p>
+                                </div>
+                                <div class="card-yellow-block"></div>
                             </div>
-                            <p class="lead card-name">
-                                Name: 
-                            </p>
-                            <p class="card-desc">
-                                Pmpinan perusahaan Pembuatan Kefursi plastik berkualitas alam
-                            </p>
-                        </div>
-                        <div class="card-yellow-block">
-
-                        </div>
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                </div>
-                <div class="supplier-row">
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
-                    <div class="row-content">
-                        d
-                    </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
+
         </div>
 </asp:Content>
