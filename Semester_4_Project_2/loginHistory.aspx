@@ -18,8 +18,12 @@
                         <asp:TextBox ID="adminUsernameForm" class="form-control" placeholder="Enter the name"  runat="server"></asp:TextBox>
                     </div>
                     <div class="category">
-                        <label for="DropDownCategory" class="form-label">Login Status</label>
-                        <asp:DropDownList ID="ddlCat" runat="server"  placeholder="Choose the category">
+                        <label for="DropDownStatus" class="form-label">Login Status</label>
+                        <asp:DropDownList ID="ddlStat" runat="server"  placeholder="Choose the category">
+                            <asp:ListItem Text="-- Select Action --" Value=""></asp:ListItem>
+                            <asp:ListItem Text="success" Value="success"></asp:ListItem>
+                            <asp:ListItem Text="logout" Value="logout"></asp:ListItem>
+                            <asp:ListItem Text="failed" Value="failed"></asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -29,29 +33,20 @@
             </div>
         </div>
         <div class="sup-content-table">
+            <HeaderTemplate>
                 <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
-                <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
-                </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
+                     <tr style="border-bottom:1px solid black;">
+                        <th>Username</th>
+                        <th>Login Time</th>
+                        <th>Status</th>
+                    </tr>
+            </HeaderTemplate> 
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
-                        <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
+                         <tr>
+                            <td><%# Eval("username") %></td>
+                            <td><%# Eval("login_time") %></td>
+                            <td><%# Eval("status") %></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>

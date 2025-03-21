@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 using Semester_4_Project_2.Class;
 
 namespace Semester_4_Project_2
@@ -16,22 +17,43 @@ namespace Semester_4_Project_2
             {
                 Response.Redirect("home_supplier.aspx"); // Redirect jika belum login
             }
-            dropdownList();
+
+            if (!IsPostBack)
+            {
+                LoadHistory();
+            }
+
+
+
         }
 
-        public void dropdownList()
-        {
-            ddlCat.Items.Add("I am a value and a text");
-            ddlCat.Items.Add("adwfeafeaef");
-            ddlCat.Items.Add("test");
-        }
+        //public void btnSearch(object sender, EventArgs e)
+        //{
+        //    ddlCat.Items.Clear();
+        //    ddlCat.Items.Add("I am a value and a text");
+        //    ddlCat.Items.Add("adwfeafeaef");
+        //    ddlCat.Items.Add("test");
+        //}
 
-        public void btnSearch(object sender, EventArgs e)
+        private void LoadHistory()
         {
-            ddlCat.Items.Clear();
-            ddlCat.Items.Add("I am a value and a text");
-            ddlCat.Items.Add("adwfeafeaef");
-            ddlCat.Items.Add("test");
+            ClassSupplierHis supplierHis = new ClassSupplierHis();
+            List<ClassSupplierHis.SupplierHistory> historyList = supplierHis.GetAllHistory();
+
+            Repeater1.DataSource = historyList;
+            Repeater1.DataBind();
+        }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string actionType = ddlActionType.SelectedValue;
+            string name = txtName.Text.Trim();
+            string username = txtUsername.Text.Trim();
+
+            ClassSupplierHis supplierHis = new ClassSupplierHis();
+            List<ClassSupplierHis.SupplierHistory> historyList = supplierHis.SearchHistory(actionType, name, username);
+
+            Repeater1.DataSource = historyList;
+            Repeater1.DataBind();
         }
     }
 }

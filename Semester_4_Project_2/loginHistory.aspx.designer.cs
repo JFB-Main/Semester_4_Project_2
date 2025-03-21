@@ -24,13 +24,13 @@ namespace Semester_4_Project_2
         protected global::System.Web.UI.WebControls.TextBox adminUsernameForm;
 
         /// <summary>
-        /// ddlCat control.
+        /// ddlStat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCat;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStat;
 
         /// <summary>
         /// ButtonSearch control.

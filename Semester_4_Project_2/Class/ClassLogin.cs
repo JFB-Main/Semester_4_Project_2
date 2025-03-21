@@ -35,10 +35,11 @@ namespace Semester_4_Project_2.Class
                         {
                             string storedHash = reader.GetString(0);
                             role = reader.GetString(1);
-                            string inputHash = ComputeSHA256(password);
 
-                            if (storedHash.Equals(inputHash, StringComparison.OrdinalIgnoreCase))
+                            // Verifikasi password menggunakan BCrypt
+                            if (BCrypt.Net.BCrypt.Verify(password, storedHash))
                             {
+                                // Jika role admin, blok login
                                 if (role.Equals("admin", StringComparison.OrdinalIgnoreCase))
                                 {
                                     LogLogin(username, "blocked");
@@ -64,14 +65,10 @@ namespace Semester_4_Project_2.Class
             return isAuthenticated;
         }
 
-        private static string ComputeSHA256(string input)
+        // Fungsi untuk hashing password baru saat user dibuat
+        public static string HashPassword(string password)
         {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = Encoding.UTF8.GetBytes(input);
-                byte[] hash = sha256.ComputeHash(bytes);
-                return BitConverter.ToString(hash).Replace("-", "").ToLower();
-            }
+            return BCrypt.Net.BCrypt.HashPassword(password);
         }
 
         private static void LogLogin(string username, string status)

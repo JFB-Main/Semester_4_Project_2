@@ -162,9 +162,12 @@
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Class\ClassAddAdmin.cs" />
     <Compile Include="Class\ClassLogin.cs" />
+    <Compile Include="Class\ClassLoginHis.cs" />
     <Compile Include="Class\ClassSession.cs" />
     <Compile Include="Class\ClassSupplierControl.cs" />
+    <Compile Include="Class\ClassSupplierHis.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

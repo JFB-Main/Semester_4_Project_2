@@ -31,32 +31,29 @@
             </div>
         </div>
         <div class="sup-content-table">
-                <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
-                <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
-                </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
-                <asp:Repeater ID="Repeater1" runat="server">
-                    <ItemTemplate>
-                        <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
-                        </tr>
-                    </ItemTemplate>
-                </asp:Repeater>
+            <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+                <thead>
+                    <tr style="border-bottom:1px solid black;">
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Created At</th>
+                        <th>Updated At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <asp:Repeater ID="RepeaterUsers" runat="server">
+                        <ItemTemplate>
+                            <tr>
+                                 <td><%# Eval("id") %></td>
+                                <td><%# Eval("username") %></td>
+                                <td><%# Eval("role") %></td>
+                                <td><%# Eval("created_at", "{0:yyyy-MM-dd HH:mm:ss}") %></td>
+                                <td><%# Eval("updated_at", "{0:yyyy-MM-dd HH:mm:ss}") %></td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </tbody>
             </table>
         </div>
     </div>

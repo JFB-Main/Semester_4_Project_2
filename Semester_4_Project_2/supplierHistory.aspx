@@ -15,52 +15,54 @@
                 </div>
                 <div>
                     <div class="mb-3">
-                        <label for="productNameForm" class="form-label">Product Name</label>
-                        <asp:TextBox ID="productNameForm" class="form-control" placeholder="Enter the product name"  runat="server"></asp:TextBox>
+                        <label for="productNameForm" class="form-label">Supplier Name</label>
+                        <asp:TextBox ID="txtName" class="form-control" placeholder="Enter the product name"  runat="server"></asp:TextBox>
                     </div>
                     <div class="mb-3">
-                        <label for="supplierForm" class="form-label">Supplier Name</label>
-                        <asp:TextBox ID="supplierForm" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
+                        <label for="supplierForm" class="form-label">Useradmin</label>
+                        <asp:TextBox ID="txtUsername" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
                     </div>
                     <div class="category">
-                        <label for="DropDownCategory" class="form-label">Category</label>
-                        <asp:DropDownList ID="ddlCat" runat="server"  placeholder="Choose the category">
+                        <label for="DropDownCategory" class="form-label">Action Type</label>
+                        <asp:DropDownList ID="ddlActionType" runat="server">
+                            <asp:ListItem Text="-- Select Action --" Value=""></asp:ListItem>
+                            <asp:ListItem Text="INSERT" Value="INSERT"></asp:ListItem>
+                            <asp:ListItem Text="UPDATE" Value="UPDATE"></asp:ListItem>
+                            <asp:ListItem Text="DELETE" Value="DELETE"></asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
             </div>
             <div class="">
-                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch" class="btn btn-primary button-yellow-design button-layout"/>
+                <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" class="btn btn-primary button-yellow-design button-layout"/>
             </div>
         </div>
         <div class="sup-content-table">
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;>
+            <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Address</th>
+                    <th>Image</th>
+                    <th>Username</th>
+                    <th>Action Type</th>
+                    <th>Action Date</th>
                 </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
+                            <td><%# Eval("Name") %></td>
+                            <td><%# Eval("Description") %></td>
+                            <td><%# Eval("Address") %></td>
+                            <td><img src='<%# Eval("ImagePath") %>' width="50"/></td>
+                            <td><%# Eval("Username") %></td>
+                            <td><%# Eval("ActionType") %></td>
+                            <td><%# Eval("ActionDate", "{0:yyyy-MM-dd HH:mm:ss}") %></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
             </table>
         </div>
+
     </div>
 </asp:Content>
