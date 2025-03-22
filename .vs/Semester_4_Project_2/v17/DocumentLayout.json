@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\suppliercontrol.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\suppliercontrol.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\class\\classcontacthis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\class\\classcontacthis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\suppliercontrol.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\suppliercontrol.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\usermail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\usermail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\usermail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\usermail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\supplierhistory.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\supplierhistory.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "supplierControl.aspx.cs",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierControl.aspx.cs",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\supplierControl.aspx.cs",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierControl.aspx.cs",
+              "RelativeToolTip": "Semester_4_Project_2\\supplierControl.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:29:53.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "supplierControl.aspx",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierControl.aspx",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\supplierControl.aspx",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierControl.aspx",
+              "RelativeToolTip": "Semester_4_Project_2\\supplierControl.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-22T16:29:40.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\login.aspx",
               "RelativeDocumentMoniker": "Semester_4_Project_2\\login.aspx",
@@ -51,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "userMail.aspx",
               "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\userMail.aspx",
               "RelativeDocumentMoniker": "Semester_4_Project_2\\userMail.aspx",
@@ -59,33 +89,20 @@
               "RelativeToolTip": "Semester_4_Project_2\\userMail.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-22T14:22:12.154Z",
+              "WhenOpened": "2025-03-22T16:23:20.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "userMail.aspx.cs",
-              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\userMail.aspx.cs",
-              "RelativeDocumentMoniker": "Semester_4_Project_2\\userMail.aspx.cs",
-              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\userMail.aspx.cs",
-              "RelativeToolTip": "Semester_4_Project_2\\userMail.aspx.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAawC4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T14:22:16.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClassContactHis.cs",
-              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\Class\\ClassContactHis.cs",
-              "RelativeDocumentMoniker": "Semester_4_Project_2\\Class\\ClassContactHis.cs",
-              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\Class\\ClassContactHis.cs",
-              "RelativeToolTip": "Semester_4_Project_2\\Class\\ClassContactHis.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAgwFoAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:10:42.025Z",
+              "DocumentIndex": 4,
+              "Title": "supplierHistory.aspx",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierHistory.aspx",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\supplierHistory.aspx",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\supplierHistory.aspx",
+              "RelativeToolTip": "Semester_4_Project_2\\supplierHistory.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-22T16:23:39.42Z",
               "EditorCaption": ""
             }
           ]

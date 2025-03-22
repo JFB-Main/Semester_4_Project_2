@@ -19,7 +19,7 @@
                     </div>
                     <div class="category">
                         <label for="ddlStatus" class="form-label">Mail Status</label>
-                        <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control">
+                        <asp:DropDownList ID="ddlStatus" runat="server">
                             <asp:ListItem Value="">-- All Status --</asp:ListItem>
                             <asp:ListItem Value="Pending">Pending</asp:ListItem>
                             <asp:ListItem Value="Responded">Responded</asp:ListItem>
