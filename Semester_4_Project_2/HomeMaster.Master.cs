@@ -49,7 +49,44 @@ namespace Semester_4_Project_2
         }
 
 
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string name = nameForm.Text.Trim();
+            string email = emailForm.Text.Trim();
+            string message = messageForm.Text.Trim();
+
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(message))
+            {
+                Response.Write("<script>alert('All fields are required!');</script>");
+                return;
+            }
+
+            ClassContact contact = new ClassContact();
+            string errorMessage;
+
+            if (contact.SaveContact(name, email, message, out errorMessage))
+            {
+                // Menampilkan alert sebelum refresh
+                string script = "<script>alert('Your message has been sent!'); window.location = '" + Request.Url.AbsoluteUri + "';</script>";
+                Response.Write(script);
+            }
+            else
+            {
+                Response.Write("<script>alert('Error: " + errorMessage + "');</script>");
+            }
+        }
+
+        private void ClearForm()
+        {
+            nameForm.Text = "";
+            emailForm.Text = "";
+            messageForm.Text = "";
+        }
+
+
+
+
 
     }
-        
+
 }

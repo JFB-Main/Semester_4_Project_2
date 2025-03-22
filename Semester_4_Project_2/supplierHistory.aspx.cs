@@ -27,22 +27,20 @@ namespace Semester_4_Project_2
 
         }
 
-        //public void btnSearch(object sender, EventArgs e)
-        //{
-        //    ddlCat.Items.Clear();
-        //    ddlCat.Items.Add("I am a value and a text");
-        //    ddlCat.Items.Add("adwfeafeaef");
-        //    ddlCat.Items.Add("test");
-        //}
-
         private void LoadHistory()
         {
             ClassSupplierHis supplierHis = new ClassSupplierHis();
             List<ClassSupplierHis.SupplierHistory> historyList = supplierHis.GetAllHistory();
 
+            if (historyList.Count == 0)
+            {
+                Response.Write("<script>alert('No history data found');</script>");
+            }
+
             Repeater1.DataSource = historyList;
             Repeater1.DataBind();
         }
+
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string actionType = ddlActionType.SelectedValue;
@@ -52,8 +50,16 @@ namespace Semester_4_Project_2
             ClassSupplierHis supplierHis = new ClassSupplierHis();
             List<ClassSupplierHis.SupplierHistory> historyList = supplierHis.SearchHistory(actionType, name, username);
 
+            if (historyList.Count == 0)
+            {
+                Response.Write("<script>alert('No results found');</script>");
+            }
+
             Repeater1.DataSource = historyList;
             Repeater1.DataBind();
         }
+
+
+
     }
 }

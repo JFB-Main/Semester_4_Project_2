@@ -61,19 +61,19 @@
                     </div>
                     <div class="footer-form">
                         <div class="mb-3">
-                            <label for="emailForm" class="form-label">Name</label>
-                            <asp:TextBox ID="nameForm" class="form-control" placeholder="Enter your name" runat="server"></asp:TextBox>
+                             <label for="nameForm" class="form-label">Name</label>
+                             <asp:TextBox ID="nameForm" runat="server" CssClass="form-control" placeholder="Enter your name"></asp:TextBox>
                         </div>
                         <div class="mb-3">
                             <label for="emailForm" class="form-label">Email Address</label>
-                            <asp:TextBox ID="emailForm" class="form-control" placeholder="Enter your email address" runat="server" TextMode="Email"></asp:TextBox>
+                            <asp:TextBox ID="emailForm" runat="server" CssClass="form-control" placeholder="Enter your email address" TextMode="Email"></asp:TextBox>
                         </div>
                         <div class="mb-3">
                               <label for="messageForm" class="form-label">Your Message</label>
-                              <textarea class="form-control" id="messageForm" rows="3" placeholder="Comment"></textarea></textarea>
+                              <asp:TextBox ID="messageForm" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3" placeholder="Comment"></asp:TextBox>
                         </div>
-                              <div class="col-12">
-                                <button type="submit" class="btn btn-primary button-yellow-design">Go contact us</button>
+                        <div class="col-12">
+                              <asp:Button ID="btnSubmit" runat="server" Text="Go Contact Us" CssClass="btn btn-primary button-yellow-design" OnClick="btnSubmit_Click"/>
                         </div> 
                     </div>
                     <hr />

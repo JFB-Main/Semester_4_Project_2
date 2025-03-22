@@ -51,6 +51,7 @@ namespace Semester_4_Project_2
                 // Kosongkan Repeater jika tidak ada data
                 Repeater1.DataSource = null;
                 Repeater1.DataBind();
+                Response.Write("<script>alert('No results found');</script>");
             }
         }
 

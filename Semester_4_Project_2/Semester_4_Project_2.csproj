@@ -164,6 +164,8 @@
     </Compile>
     <Compile Include="Class\ClassAddAdmin.cs" />
     <Compile Include="Class\ClassCompanyProfile.cs" />
+    <Compile Include="Class\ClassContact.cs" />
+    <Compile Include="Class\ClassContactHis.cs" />
     <Compile Include="Class\ClassLogin.cs" />
     <Compile Include="Class\ClassLoginHis.cs" />
     <Compile Include="Class\ClassSession.cs" />

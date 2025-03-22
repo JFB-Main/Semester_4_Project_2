@@ -19,7 +19,10 @@
                     </div>
                     <div class="category">
                         <label for="ddlStatus" class="form-label">Mail Status</label>
-                        <asp:DropDownList ID="ddlStatus" runat="server"  placeholder="Choose the status">
+                        <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control">
+                            <asp:ListItem Value="">-- All Status --</asp:ListItem>
+                            <asp:ListItem Value="Pending">Pending</asp:ListItem>
+                            <asp:ListItem Value="Responded">Responded</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -30,31 +33,29 @@
             </div>
         </div>
         <div class="sup-content-table">
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+            <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Message</th>
+                    <th>Created at</th>
+                    <th>Updated at</th>
                 </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
+
                 <asp:Repeater ID="Repeater1" runat="server">
+                    <HeaderTemplate></HeaderTemplate>
                     <ItemTemplate>
                         <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
+                            <td><%# Eval("name") %></td>
+                            <td><%# Eval("email") %></td>
+                            <td><%# Eval("status") %></td>
+                            <td><%# Eval("message") %></td>
+                            <td><%# Eval("created_at") %></td>
+                            <td><%# Eval("updated_at") %></td>
                         </tr>
                     </ItemTemplate>
+                    <FooterTemplate></FooterTemplate>
                 </asp:Repeater>
             </table>
         </div>
