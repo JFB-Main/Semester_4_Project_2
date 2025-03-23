@@ -80,7 +80,8 @@
                     <div>
                         <a href="addAdmin.aspx">Add Admin</a>
                         <a href="loginHistory.aspx">Login History</a>
-                        <a href="userMail.aspx">User Mail</a>
+                        <a href="userMail.aspx">Mail Inbox</a>
+                        <a href="historyMail.aspx">Mail History</a>
                     </div>
                 </div>
             </div>

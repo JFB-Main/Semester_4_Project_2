@@ -133,6 +133,7 @@
     <Content Include="App_Themes\Project_Theme\styles\styles.css" />
     <Content Include="App_Themes\Project_Theme\styles\supplierHistory.css" />
     <Content Include="Global.asax" />
+    <Content Include="historyMail.aspx" />
     <Content Include="home_product.aspx" />
     <Content Include="home_supplier.aspx" />
     <Content Include="App_Themes\Project_Theme\Image\background-login-signup.png" />
@@ -173,6 +174,13 @@
     <Compile Include="Class\ClassSupplierHis.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="historyMail.aspx.cs">
+      <DependentUpon>historyMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="historyMail.aspx.designer.cs">
+      <DependentUpon>historyMail.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeMaster.Master.cs">
       <DependentUpon>HomeMaster.Master</DependentUpon>

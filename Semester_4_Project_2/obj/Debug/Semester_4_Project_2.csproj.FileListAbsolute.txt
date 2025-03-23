@@ -182,3 +182,5 @@ C:\Code\c#\semester4_project__2-main\Semester_4_Project_2\Semester_4_Project_2\o
 C:\Code\c#\semester4_project__2-main\Semester_4_Project_2\Semester_4_Project_2\obj\Debug\Semester.34A0B87D.Up2Date
 C:\Code\c#\semester4_project__2-main\Semester_4_Project_2\Semester_4_Project_2\obj\Debug\Semester_4_Project_2.dll
 C:\Code\c#\semester4_project__2-main\Semester_4_Project_2\Semester_4_Project_2\obj\Debug\Semester_4_Project_2.pdb
+C:\Users\Javier Farel Baroto\Documents\CCIT\SEMESTER_4\Semester4_Project_2\Semester_4_Project_2\Semester_4_Project_2\bin\BCrypt.Net-Next.dll
+C:\Users\Javier Farel Baroto\Documents\CCIT\SEMESTER_4\Semester4_Project_2\Semester_4_Project_2\Semester_4_Project_2\bin\BCrypt.Net-Next.xml
