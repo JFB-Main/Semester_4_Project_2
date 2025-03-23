@@ -127,6 +127,118 @@ namespace Semester_4_Project_2.Class
 
 
 
+        public class HistoryContact
+        {
+            public string Email { get; set; }
+            public string OldStatus { get; set; }
+            public string NewStatus { get; set; }
+            public string Username { get; set; }
+            public string Message { get; set; }
+            public DateTime ChangedAt { get; set; }
+        }
+
+        public List<HistoryContact> SearchHistory(string senderEmail, string adminName, string mailStatus)
+        {
+            List<HistoryContact> historyList = new List<HistoryContact>();
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query = "SELECT email, old_status, new_status, username, message, changed_at FROM history_contacts WHERE 1=1";
+
+                    if (!string.IsNullOrEmpty(senderEmail))
+                        query += " AND email LIKE @senderEmail";
+
+                    if (!string.IsNullOrEmpty(adminName))
+                        query += " AND username LIKE @adminName";
+
+                    if (!string.IsNullOrEmpty(mailStatus))
+                        query += " AND new_status = @mailStatus";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        if (!string.IsNullOrEmpty(senderEmail))
+                            cmd.Parameters.AddWithValue("@senderEmail", "%" + senderEmail + "%");
+
+                        if (!string.IsNullOrEmpty(adminName))
+                            cmd.Parameters.AddWithValue("@adminName", "%" + adminName + "%");
+
+                        if (!string.IsNullOrEmpty(mailStatus))
+                            cmd.Parameters.AddWithValue("@mailStatus", mailStatus);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                historyList.Add(new HistoryContact
+                                {
+                                    Email = reader["email"].ToString(),
+                                    OldStatus = reader["old_status"].ToString(),
+                                    NewStatus = reader["new_status"].ToString(),
+                                    Username = reader["username"].ToString(),
+                                    Message = reader["message"].ToString(),
+                                    ChangedAt = Convert.ToDateTime(reader["changed_at"])
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return historyList;
+        }
+
+        public List<HistoryContact> GetAllHistory()
+        {
+            List<HistoryContact> historyList = new List<HistoryContact>();
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT email, old_status, new_status, username, message, changed_at FROM history_contacts ORDER BY changed_at DESC";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                historyList.Add(new HistoryContact
+                                {
+                                    Email = reader["email"].ToString(),
+                                    OldStatus = reader["old_status"].ToString(),
+                                    NewStatus = reader["new_status"].ToString(),
+                                    Username = reader["username"].ToString(),
+                                    Message = reader["message"].ToString(),
+                                    ChangedAt = Convert.ToDateTime(reader["changed_at"])
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return historyList;
+        }
+
+
+
+        
+
+
 
     }
 }

@@ -29,13 +29,22 @@ namespace Semester_4_Project_2
 
         private void UpdateNavBar()
         {
-            
-
             if (ClassSession.IsLoggedIn())
             {
                 loginNav.Visible = false;
                 logoutNav.Visible = true;
                 usernameNav.InnerText = "Hello, " + ClassSession.Username;
+
+                string userRole = ClassSession.GetUserRole(); // Ambil role dari session
+
+                if (userRole == "superadmin")
+                {
+                    addAdminNav.Visible = true; // Tampilkan menu Add Admin hanya untuk superadmin
+                }
+                else
+                {
+                    addAdminNav.Visible = false;
+                }
             }
             else
             {
@@ -43,8 +52,10 @@ namespace Semester_4_Project_2
                 logoutNav.Visible = false;
                 usernameNav.InnerText = "";
                 supplierControlNav.Visible = false;
+                addAdminNav.Visible = false; // Sembunyikan jika tidak login
             }
         }
+
 
 
         protected void btnLogout_Click(object sender, EventArgs e)

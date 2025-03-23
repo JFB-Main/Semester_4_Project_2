@@ -13,57 +13,45 @@
                     </h2>
                 </div>
                 <div>
-                    <div class="mb-3">
-                        <label for="supplierForm" class="form-label">Supplier ID</label>
-                        <asp:TextBox ID="supplierIDForm" class="form-control" placeholder="Enter the supplier name"  runat="server"></asp:TextBox>
+                    <div class="category">
+                        <label for="DropDownSupplier" class="form-label">Supplier Name</label>
+                       <asp:DropDownList ID="ddlsup" runat="server"  placeholder="Choose the Supplier">
+                       </asp:DropDownList>
                     </div>
+
                     <div class="mb-3">
                         <label for="productNameForm" class="form-label">Stock Name</label>
                         <asp:TextBox ID="stockNameForm" class="form-control" placeholder="Enter the description"  runat="server"></asp:TextBox>
                     </div>
-                    <div class="mb-3">
-                        <label for="productNameForm" class="form-label">Stock Price</label>
-                        <asp:TextBox ID="stockPriceForm" class="form-control" placeholder="Enter the description"  runat="server"></asp:TextBox>
-                    </div>
+                    
                     <div class="category">
                         <label for="DropDownCategory" class="form-label">Category</label>
                         <asp:DropDownList ID="ddlCat" runat="server"  placeholder="Choose the category">
                         </asp:DropDownList>
                     </div>
-                    <div class="mb-3 pt-3">
-                        <label for="stockDescForm" class="form-label">Stock Description</label>
-                        <asp:TextBox ID="stockDescForm" class="form-control" style="resize: none;" placeholder="Enter the address" TextMode="MultiLine" runat="server" Rows="3"></asp:TextBox>
-                    </div>
-                </div>
+                 </div>
             </div>
             <div class="mb-3">
-                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch" class="btn btn-primary button-yellow-design button-layout"/>
+                <asp:Button ID="ButtonSearch" runat="server" Text="Search" OnClick="btnSearch_Click" class="btn btn-primary button-yellow-design button-layout"/>
             </div>
         </div>
         <div class="sup-content-table">
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+            <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
                 <tr style="border-bottom:1px solid black;">
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-    
-                <th>Product Name</th>
-
-                <th>Product Name</th>
-    
-                
+                    <th>Stock Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Stock Amount</th>
+                    <th>Description</th>
                 </tr>
-                    <td>Contoh1</td>
-                    <td>Contoh2</td>
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tr>
-                            <td>Contoh1</td>
-                            <td>Contoh2</td>
+                            <td><%# Eval("stock_name") %></td>
+                            <td><%# Eval("stock_price", "{0:C}") %></td>
+                            <td><%# Eval("category_name") %></td>
+                            <td><%# Eval("stock_amount") %></td>
+                            <td><%# Eval("description") %></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>

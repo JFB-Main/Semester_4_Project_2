@@ -165,11 +165,14 @@
     </Compile>
     <Compile Include="Class\ClassAddAdmin.cs" />
     <Compile Include="Class\ClassCompanyProfile.cs" />
+    <Compile Include="Class\ClassCompanyStocks.cs" />
     <Compile Include="Class\ClassContact.cs" />
     <Compile Include="Class\ClassContactHis.cs" />
     <Compile Include="Class\ClassLogin.cs" />
     <Compile Include="Class\ClassLoginHis.cs" />
     <Compile Include="Class\ClassSession.cs" />
+    <Compile Include="Class\ClassStocksControl.cs" />
+    <Compile Include="Class\ClassStocksHis.cs" />
     <Compile Include="Class\ClassSupplierControl.cs" />
     <Compile Include="Class\ClassSupplierHis.cs" />
     <Compile Include="Global.asax.cs">

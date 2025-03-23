@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient; 
 using System.Configuration;
 using System.Data;
+using Semester_4_Project_2.Class;
 
 namespace Semester_4_Project_2
 {
@@ -16,39 +17,27 @@ namespace Semester_4_Project_2
         {
             if (!IsPostBack)
             {
-                BindData();
+                if (!IsPostBack)
+                {
+                    LoadProducts("", ""); // Menampilkan semua data saat pertama kali dibuka
+                }
             }
         }
 
-        private void BindData()
+        ClassCompanyStocks companyProduct = new ClassCompanyStocks();
+
+        protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            string productName = productNameForm.Text.Trim();
+            string supplierName = supplierForm.Text.Trim();
+            LoadProducts(productName, supplierName);
+        }
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                try
-                {
-                    conn.Open();
-
-                    string query = "SELECT stock_name, description FROM stocks";
-
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-
-                    DataTable dt = new DataTable();
-
-                    da.Fill(dt);
-
-                    Repeater1.DataSource = dt;
-                    Repeater1.DataBind();
-                }
-                catch (Exception ex)
-                {
-                    // Handle any errors here
-                    Response.Write("Error: " + ex.Message);
-                }
-            }
+        private void LoadProducts(string productName, string supplierName)
+        {
+            DataTable dt = companyProduct.GetProducts(productName, supplierName);
+            Repeater1.DataSource = dt;
+            Repeater1.DataBind();
         }
 
     }

@@ -102,28 +102,30 @@
                     <div>
                         <div class="mb-3">
                             <label for="productNameForm" class="form-label">Product Name</label>
-                            <input type="text" class="form-control" id="productNameForm" placeholder="Enter the product name">
+                            <asp:TextBox ID="productNameForm" runat="server" CssClass="form-control" placeholder="Enter the product name"></asp:TextBox>
                         </div>
                         <div class="mb-3">
                             <label for="supplierForm" class="form-label">Supplier Name</label>
-                            <input type="text" class="form-control" id="supplierForm" placeholder="Enter the supplier name">
+                            <asp:TextBox ID="supplierForm" runat="server" CssClass="form-control" placeholder="Enter the supplier name"></asp:TextBox>
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary button-black-design">Search</button>
-                    </div> 
+                        <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-primary button-black-design" OnClick="btnSearch_Click"/>
+                    </div>
                 </div>
                 <div class="sup-content-table">
                      <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;>
-                      <tr style="border-bottom:1px solid black;">
-                        <th>Product Name</th>
-                        <th>Description</th>
-                      </tr>
+                          <tr style="border-bottom:1px solid black;">
+                            <th>Product Name</th>
+                            <th>Description</th>
+                            <th>Supplier Name</th>
+                          </tr>
                         <asp:Repeater ID="Repeater1" runat="server">
                             <ItemTemplate>
                                 <tr>
-                                    <td><%# Eval("stock_name") %></td>
+                                    <td><%# Eval("ProductName") %></td>
                                     <td><%# Eval("description") %></td>
+                                    <td><%# Eval("SupplierName") %></td>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>

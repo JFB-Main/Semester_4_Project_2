@@ -15,13 +15,13 @@ namespace Semester_4_Project_2
     {
 
         /// <summary>
-        /// supplierIDForm control.
+        /// ddlsup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox supplierIDForm;
+        protected global::System.Web.UI.WebControls.DropDownList ddlsup;
 
         /// <summary>
         /// stockNameForm control.
@@ -33,15 +33,6 @@ namespace Semester_4_Project_2
         protected global::System.Web.UI.WebControls.TextBox stockNameForm;
 
         /// <summary>
-        /// stockPriceForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stockPriceForm;
-
-        /// <summary>
         /// ddlCat control.
         /// </summary>
         /// <remarks>
@@ -49,15 +40,6 @@ namespace Semester_4_Project_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlCat;
-
-        /// <summary>
-        /// stockDescForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stockDescForm;
 
         /// <summary>
         /// ButtonSearch control.

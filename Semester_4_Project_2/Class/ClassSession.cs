@@ -51,6 +51,14 @@ namespace Semester_4_Project_2.Class
             }
         }
 
+        public static string GetUserRole()
+        {
+            if (HttpContext.Current.Session["UserRole"] != null)
+            {
+                return HttpContext.Current.Session["UserRole"].ToString();
+            }
+            return string.Empty; // Jika tidak ada role, kembalikan string kosong
+        }
 
-    }  
+    }
 }
