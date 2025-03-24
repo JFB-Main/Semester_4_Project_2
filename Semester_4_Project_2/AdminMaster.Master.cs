@@ -35,16 +35,17 @@ namespace Semester_4_Project_2
                 logoutNav.Visible = true;
                 usernameNav.InnerText = "Hello, " + ClassSession.Username;
 
-                string userRole = ClassSession.GetUserRole(); // Ambil role dari session
+                
 
-                if (userRole == "superadmin")
+                if (ClassSession.Role == "superadmin")
                 {
-                    addAdminNav.Visible = true; // Tampilkan menu Add Admin hanya untuk superadmin
+                    addAdminNav.Visible = true; // Tampilkan jika role superadmin
                 }
                 else
                 {
                     addAdminNav.Visible = false;
                 }
+
             }
             else
             {

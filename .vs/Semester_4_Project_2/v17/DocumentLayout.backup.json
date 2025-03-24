@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\addadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\addadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\addadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\addadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\semester_4_project_2\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\adminmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|c:\\code\\c#\\semester4_project__2-main\\semester_4_project_2\\semester_4_project_2\\class\\classsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\semester_4_project_2\\class\\classsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\class\\classsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{45C8E4A3-8426-48D7-8CEF-0ABA8286E7B3}|Semester_4_Project_2\\Semester_4_Project_2.csproj|solutionrelative:semester_4_project_2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 172,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\login.aspx",
               "RelativeDocumentMoniker": "Semester_4_Project_2\\login.aspx",
@@ -40,32 +48,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-03-19T07:59:44.362Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminMaster.Master",
-              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master",
-              "RelativeDocumentMoniker": "Semester_4_Project_2\\AdminMaster.Master",
-              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master*",
-              "RelativeToolTip": "Semester_4_Project_2\\AdminMaster.Master*",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-23T11:03:16.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminMaster.Master.cs",
-              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master.cs",
-              "RelativeDocumentMoniker": "Semester_4_Project_2\\AdminMaster.Master.cs",
-              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master.cs",
-              "RelativeToolTip": "Semester_4_Project_2\\AdminMaster.Master.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:03:17.449Z",
               "EditorCaption": ""
             },
             {
@@ -82,15 +64,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClassSession.cs",
               "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\Class\\ClassSession.cs",
               "RelativeDocumentMoniker": "Semester_4_Project_2\\Class\\ClassSession.cs",
               "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\Class\\ClassSession.cs",
               "RelativeToolTip": "Semester_4_Project_2\\Class\\ClassSession.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwDUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T11:01:10.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminMaster.Master",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\AdminMaster.Master",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master",
+              "RelativeToolTip": "Semester_4_Project_2\\AdminMaster.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-23T11:03:16.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminMaster.Master.cs",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master.cs",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\AdminMaster.Master.cs",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\AdminMaster.Master.cs",
+              "RelativeToolTip": "Semester_4_Project_2\\AdminMaster.Master.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:03:17.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "addAdmin.aspx",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\addAdmin.aspx",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\addAdmin.aspx",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\addAdmin.aspx",
+              "RelativeToolTip": "Semester_4_Project_2\\addAdmin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-24T01:46:02.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "addAdmin.aspx.cs",
+              "DocumentMoniker": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\addAdmin.aspx.cs",
+              "RelativeDocumentMoniker": "Semester_4_Project_2\\addAdmin.aspx.cs",
+              "ToolTip": "C:\\Code\\c#\\semester4_project__2-main\\Semester_4_Project_2\\Semester_4_Project_2\\addAdmin.aspx.cs",
+              "RelativeToolTip": "Semester_4_Project_2\\addAdmin.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T01:46:06.551Z",
               "EditorCaption": ""
             }
           ]

@@ -17,14 +17,9 @@ namespace Semester_4_Project_2
             {
                 Response.Redirect("home_supplier.aspx"); // Redirect jika belum login
             }
-            else
+            else if (ClassSession.Role != "superadmin") // Jika bukan superadmin, redirect ke halaman lain
             {
-                string userRole = ClassSession.GetUserRole(); // Ambil role pengguna dari session
-
-                if (userRole != "superadmin") // Jika bukan superadmin, redirect
-                {
-                    Response.Redirect("supplierControl.aspx"); // Redirect ke halaman lain (misalnya unauthorized)
-                }
+                Response.Redirect("supplierControl.aspx"); // Redirect ke halaman lain (misalnya unauthorized)
             }
 
             if (!IsPostBack)
