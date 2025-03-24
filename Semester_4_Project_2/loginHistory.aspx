@@ -19,7 +19,7 @@
                     </div>
                     <div class="category">
                         <label for="DropDownStatus" class="form-label">Login Status</label>
-                        <asp:DropDownList ID="ddlStat" runat="server"  placeholder="Choose the category">
+                        <asp:DropDownList ID="ddlStat" runat="server" class="form-control"  placeholder="Choose the category">
                             <asp:ListItem Text="-- Select Action --" Value=""></asp:ListItem>
                             <asp:ListItem Text="success" Value="success"></asp:ListItem>
                             <asp:ListItem Text="logout" Value="logout"></asp:ListItem>
@@ -33,24 +33,44 @@
             </div>
         </div>
         <div class="sup-content-table">
-            <HeaderTemplate>
-                <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+                <table class="table table-hover table-products display" style="outline: 1px solid #343434; width:100%" id="tableid">
+                    <thead>
                      <tr style="border-bottom:1px solid black;">
                         <th>Username</th>
                         <th>Login Time</th>
                         <th>Status</th>
                     </tr>
-            </HeaderTemplate> 
-                <asp:Repeater ID="Repeater1" runat="server">
-                    <ItemTemplate>
-                         <tr>
-                            <td><%# Eval("username") %></td>
-                            <td><%# Eval("login_time") %></td>
-                            <td><%# Eval("status") %></td>
-                        </tr>
-                    </ItemTemplate>
-                </asp:Repeater>
-            </table>
+                    </thead>
+                    <tbody>
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                             <tr>
+                                <td><%# Eval("username") %></td>
+                                <td><%# Eval("login_time") %></td>
+                                <td><%# Eval("status") %></td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    </tbody>
+                </table>
         </div>
-    </div>
+        </div>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
+  
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#tableid').DataTable({
+                "paging": true,          // Enable pagination
+                "pageLength": 10,        // Set the number of rows per page
+                "lengthMenu": [5, 10, 15, 20] // Define length options
+            });
+        });
+    </script>
 </asp:Content>

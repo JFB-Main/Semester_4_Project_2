@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="sup-content-table">
-            <table id="table1" class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
+            <table id="tableid" class="table table-hover table-striped table-products display" style="outline: 1px solid #343434;">
                 <thead>
                     <tr style="border-bottom:1px solid black;">
                         <th>ID</th>
@@ -57,4 +57,22 @@
             </table>
         </div>
     </div>
+
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
+  
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#tableid').DataTable({
+                "paging": true,          // Enable pagination
+                "pageLength": 10,        // Set the number of rows per page
+                "lengthMenu": [5, 10] // Define length options
+            });
+        });
+    </script>
 </asp:Content>

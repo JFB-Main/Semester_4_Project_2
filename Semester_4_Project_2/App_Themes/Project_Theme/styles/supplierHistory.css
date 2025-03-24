@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     gap: 5rem;
-    padding: 0 0rem;
+    padding: 0 4rem;
 }
 
 .sup-content-search {
@@ -24,6 +24,7 @@
 
 .table-products {
     width: 700px;
+    text-align: justify;
 }
 
 .button-yellow-design {

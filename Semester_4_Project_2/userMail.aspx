@@ -19,7 +19,7 @@
                     </div>
                     <div class="category">
                         <label for="ddlStatus" class="form-label">Mail Status</label>
-                        <asp:DropDownList ID="ddlStatus" runat="server">
+                        <asp:DropDownList ID="ddlStatus" runat="server" class="form-control">
                             <asp:ListItem Value="">-- All Status --</asp:ListItem>
                             <asp:ListItem Value="Pending">Pending</asp:ListItem>
                             <asp:ListItem Value="Responded">Responded</asp:ListItem>
@@ -33,31 +33,53 @@
             </div>
         </div>
         <div class="sup-content-table">
-            <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;">
-                <tr style="border-bottom:1px solid black;">
+            <table class="table table-hover table-striped table-products display" style="outline: 1px solid #343434;" id="tableid">
+                <thead>
+                    <tr style="border-bottom:1px solid black;">
                     <th>Name</th>
                     <th>Email</th>
                     <th>Status</th>
                     <th>Message</th>
                     <th>Created at</th>
                     <th>Updated at</th>
-                </tr>
+                    </tr>
+                </thead>
 
-                <asp:Repeater ID="Repeater1" runat="server">
-                    <HeaderTemplate></HeaderTemplate>
-                    <ItemTemplate>
-                        <tr>
-                            <td><%# Eval("name") %></td>
-                            <td><%# Eval("email") %></td>
-                            <td><%# Eval("status") %></td>
-                            <td><%# Eval("message") %></td>
-                            <td><%# Eval("created_at") %></td>
-                            <td><%# Eval("updated_at") %></td>
-                        </tr>
-                    </ItemTemplate>
-                    <FooterTemplate></FooterTemplate>
-                </asp:Repeater>
+                <tbody>
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <HeaderTemplate></HeaderTemplate>
+                        <ItemTemplate>
+                            <tr>
+                                <td><%# Eval("name") %></td>
+                                <td><%# Eval("email") %></td>
+                                <td><%# Eval("status") %></td>
+                                <td><%# Eval("message") %></td>
+                                <td><%# Eval("created_at") %></td>
+                                <td><%# Eval("updated_at") %></td>
+                            </tr>
+                        </ItemTemplate>
+                        <FooterTemplate></FooterTemplate>
+                    </asp:Repeater>
+                </tbody>
             </table>
         </div>
     </div>
+
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
+  
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#tableid').DataTable({
+                "paging": true,          // Enable pagination
+                "pageLength": 10,        // Set the number of rows per page
+                "lengthMenu": [5, 10, 15, 20] // Define length options
+            });
+        });
+    </script>
 </asp:Content>

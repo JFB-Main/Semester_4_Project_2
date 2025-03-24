@@ -114,23 +114,45 @@
                     </div>
                 </div>
                 <div class="sup-content-table">
-                     <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;>
+                     <table class="table table-hover table-striped table-products" style="outline: 1px solid #343434;" id="tableid">
+                        <thead>
                           <tr style="border-bottom:1px solid black;">
                             <th>Product Name</th>
                             <th>Description</th>
                             <th>Supplier Name</th>
                           </tr>
-                        <asp:Repeater ID="Repeater1" runat="server">
-                            <ItemTemplate>
-                                <tr>
-                                    <td><%# Eval("ProductName") %></td>
-                                    <td><%# Eval("description") %></td>
-                                    <td><%# Eval("SupplierName") %></td>
-                                </tr>
-                            </ItemTemplate>
-                        </asp:Repeater>
+                        </thead>
+                         <tbody>
+                            <asp:Repeater ID="Repeater1" runat="server">
+                                <ItemTemplate>
+                                    <tr>
+                                        <td><%# Eval("ProductName") %></td>
+                                        <td><%# Eval("description") %></td>
+                                        <td><%# Eval("SupplierName") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+
+            <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
+  
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#tableid').DataTable({
+                "paging": true,          // Enable pagination
+                "pageLength": 10,        // Set the number of rows per page
+                "lengthMenu": [5, 10, 15, 20] // Define length options
+            });
+        });
+    </script>
 </asp:Content>

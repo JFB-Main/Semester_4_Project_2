@@ -176,9 +176,11 @@
     opacity: .6;
 }
 
-.content-supplier .sup-desc{
+.content-supplier .sup-desc {
     text-align: center;
     padding: 0 10rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
 }
 
 .supplier-container {
@@ -223,7 +225,9 @@
 }
 
 .card-img{
-    width: 160px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
 }
 
 .card-line {
