@@ -47,6 +47,14 @@ namespace Semester_4_Project_2
         {
             string username = adminUsernameForm.Text.Trim();
             string password = adminPasswordForm.Text.Trim();
+
+            // Validasi input tidak boleh kosong
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                Response.Write("<script>alert('Username and password cannot be empty!');</script>");
+                return;
+            }
+
             ClassAddAdmin adminControl = new ClassAddAdmin();
             string errorMessage;
 
@@ -56,9 +64,10 @@ namespace Semester_4_Project_2
             }
             else
             {
-                Response.Write("Error: " + errorMessage);
+                Response.Write("<script>alert('Error: " + errorMessage + "');</script>");
             }
         }
+
 
         public void btnUpdate(object sender, EventArgs e)
         {

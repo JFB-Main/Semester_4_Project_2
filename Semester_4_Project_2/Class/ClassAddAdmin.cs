@@ -20,6 +20,14 @@ namespace Semester_4_Project_2.Class
         public bool AddAdmin(string username, string password, out string errorMessage)
         {
             errorMessage = "";
+
+            // Validasi input tidak boleh kosong
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                errorMessage = "Username dan password tidak boleh kosong!";
+                return false;
+            }
+
             try
             {
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
@@ -43,6 +51,7 @@ namespace Semester_4_Project_2.Class
                 return false;
             }
         }
+
 
         // Update password admin berdasarkan ID
         public bool UpdatePasswordByUsername(string username, string newPassword, out string errorMessage)
